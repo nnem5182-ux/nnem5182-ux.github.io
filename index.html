@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신의 그림 속에서</title>
+  <meta name="description" content="웹소설 《신의 그림 속에서》 공개 페이지">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+      background: #0d0f14;
+      color: #eceff4;
+      line-height: 1.75;
+    }
+    .hero {
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 25%, rgba(78, 105, 180, 0.22), transparent 38%),
+        linear-gradient(180deg, #111522 0%, #0d0f14 100%);
+    }
+    .hero-inner { max-width: 850px; }
+    .eyebrow {
+      font-size: 0.85rem;
+      letter-spacing: 0.22em;
+      color: #9ea8c7;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(2.6rem, 8vw, 5.8rem);
+      line-height: 1.05;
+      margin: 0 0 18px;
+      font-weight: 800;
+    }
+    .eng {
+      font-size: 1.05rem;
+      color: #aab2c8;
+      margin-bottom: 28px;
+    }
+    .desc {
+      max-width: 620px;
+      margin: 0 auto 32px;
+      color: #c8cedd;
+      font-size: 1.05rem;
+    }
+    .buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); opacity: .94; }
+    .primary {
+      background: #f2f4f8;
+      color: #11141a;
+    }
+    .secondary {
+      border: 1px solid #3a4154;
+      color: #e5e9f2;
+      background: #171b24;
+    }
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+    .card {
+      background: #151922;
+      border: 1px solid #282e3c;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 22px;
+    }
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.35rem;
+    }
+    .card p {
+      margin: 0 0 18px;
+      color: #b9c1d2;
+    }
+    .text-link {
+      color: #dbe3ff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .text-link:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      color: #737d92;
+      padding: 0 24px 40px;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">WEB NOVEL</div>
+      <h1>신의 그림 속에서</h1>
+      <div class="eng">In God’s Painting</div>
+      <p class="desc">
+        《신의 그림 속에서》 공개본입니다.
+        아래 버튼에서 소설 전체 원문을 바로 읽거나 복사할 수 있습니다.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="신그림본문.txt">소설 읽기</a>
+        <a class="btn secondary" href="신그림본문.txt" target="_blank" rel="noopener">AI용 전체 TXT 열기</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="content">
+    <div class="card">
+      <h2>전체 원문</h2>
+      <p>현재 공개된 전체 소설 본문을 텍스트 형태로 제공합니다.</p>
+      <a class="text-link" href="신그림본문.txt">신그림본문.txt →</a>
+    </div>
+
+    <div class="card">
+      <h2>AI에게 읽히기</h2>
+      <p>
+        AI에게 이 작품을 읽히고 싶다면 위의 TXT 파일 주소를 복사해서
+        “이 링크의 소설을 읽고 분석해줘”처럼 전달하면 됩니다.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    © 신의 그림 속에서
+  </footer>
+</body>
+</html>
